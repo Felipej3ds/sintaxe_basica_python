@@ -8,7 +8,7 @@ print("ola", "nada", end = " ")
 #f_strng
 
 oi = "nada"
-print(f"nada\n{oi}")
+print(f"oi {oi}")
 
 #formatador
 

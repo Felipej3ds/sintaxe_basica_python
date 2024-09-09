@@ -1,4 +1,4 @@
-#O que são variaveis:d
+#O que são variaveis
 
 """ são espaços reservados na memoria que podemos Armazenar/Acessa   
 - variaveis possuem
