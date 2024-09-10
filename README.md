@@ -1,10 +1,10 @@
 # Uma revisão geral da linguagem python
 
-- como realizar saida de dados print
+- variaveis de uma maneira geral
 
-- entrada de dados com imput
+- tipos de dados em python de uma maneira geral
 
-- variaveis e tipos de dados em python
+- como realizar saida de dados print/entrada de dados com imput
 
 - como realizar operações aritimeticas
 

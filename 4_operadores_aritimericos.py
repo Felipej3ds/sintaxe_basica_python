@@ -13,7 +13,7 @@ a = 4 * 4
 print(a)
 
 #Divisão
-a = 5 / 5
+b = 5 / 5
 print(a)
 
 #precedência

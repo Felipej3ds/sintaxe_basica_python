@@ -34,7 +34,7 @@ y = False
 print(x and y)  
 
 # assert - Checa se uma condição é verdadeira, caso contrário, levanta uma exceção AssertionError
-x = 5
+x1 = 5
 assert x == 5, "O valor de x não é 5"
 
 # break - Sai de um loop
@@ -63,21 +63,21 @@ print(soma(3, 4))
 
 
 # del - Remove u ma variável, item de uma lista, atributo de um objeto, etc.
-x = 5
+x2 = 5
 del x
 
 # elif - Condicional "else if" usado em estruturas condicionais
-x = 10
-if x < 5:
+x3 = 10
+if x3 < 5:
     print("Menor que 5")
-elif x == 5:
+elif x3 == 5:
     print("Igual a 5")
 else:
     print("Maior que 5")
 
 # else - Bloco executado quando a condição de um if não é satisfeita
-x = 5
-if x > 0:
+x3 = 5
+if x3 > 0:
     print("x é positivo")
 else:
     print("x não é positivo")
@@ -117,7 +117,7 @@ funcao()
 print(x)  # Saída: 10
 
 # if - Estrutura condicional
-x = 5
+x3 = 5
 if x > 0:
     print("x é positivo")
 
@@ -131,7 +131,7 @@ if "banana" in frutas:
     print("banana está na lista")
 
 # is - Verifica se dois objetos são o mesmo objeto na memória
-x = [1, 2, 3]
+x4 = [1, 2, 3]
 y = x
 print(x is y)  # Saída: True
 
@@ -164,12 +164,12 @@ def funcao_vazia():
     pass
 
 # raise - Levanta uma exceção explicitamente
-x = 10
+x5 = 10
 if x > 5:
     raise Exception("x não pode ser maior que 5")
 
 # return - Retorna um valor de uma função
-def soma(a, b):
+def soma1(a: int, b: int) -> int:
     return a + b
 
 resultado = soma(3, 4)

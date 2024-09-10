@@ -1,4 +1,4 @@
-"""objetivo
+"""Entrada de dados: input
 entrada de dados pode ser feita com a função input()
   - input(): sempre produz um dado do tipo string
 """
