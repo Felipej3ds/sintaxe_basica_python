@@ -1,6 +1,7 @@
-#Aqui apresenta-se alguma das bibliotecas padrões comuns da linguagem
-
 #Bliotecas padrão
+#uma breve anotação sobre as bibliotecas padrões da linguagem python
+import os, sys, math, random, datetime, collections, json
+
 """ 
 os: It provides a bunch of functions that allow us to interact with the operational system
 
@@ -17,7 +18,7 @@ collections: The collection Module in Python provides different types of contain
 json
 """
 
-#Algumas fuções nativas mais exemplos 
+#os
 
 
 
