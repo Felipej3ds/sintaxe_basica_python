@@ -68,3 +68,5 @@ print(set2)
 print(set1) 
 #não podemos acessar os elementos de um set utilizando indices
 #existe varias funções nativas da linguagem python para manipular sets
+
+
