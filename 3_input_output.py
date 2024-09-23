@@ -5,8 +5,8 @@ saida de dados pode ser feita com a função : imprime na saida de dados padrão
 """
 
 #função print
+#sintaxe: print(valor(s), sep= ‘ ‘, end = ‘ ’, file=file, flush=flush)
 '''
-sintaxe: print(value(s), sep= ‘ ‘, end = ‘\n’, file=file, flush=flush)
 imprime e pula de linha
 
 para alterar os caracteres de fim de string 

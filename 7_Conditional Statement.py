@@ -83,3 +83,4 @@ print(("a é maior que b", "b é maior que a") [a < b])
 print({True: "b é maior que a", False: "a é maior que b"} [b > a])
 
 print((lambda: "b > a", lambda: "a > b") [b < a]())
+

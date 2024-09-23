@@ -1,4 +1,4 @@
-# Uma revisão geral da linguagem python
+# Uma revisão geral da sintexe da linguagem python
 
 - variaveis de uma maneira geral
 

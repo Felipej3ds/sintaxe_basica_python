@@ -1,72 +1,68 @@
-#data type é um conceito importante em qualquer linguagem de programação para armazenamento e manipulação de dados
-#A lingem python por padrão possui os seguintes tipos de dados 
+# Tipos de Dados em Python
+
+# Os tipos de dados são conceitos importantes em qualquer linguagem de programação para armazenamento e manipulação de dados.
+# Em Python, os principais tipos de dados são:
 """
-1. tipo numerico: {int, float, complex}
-2. tipo sequencial: {list, tuple, range, strg}
-tipo de dicionario: dics
-tipo de conjunto: {set, frozenset}
-tipo booleano: {bool}
-tipos binarios:{bytes, bytearray, memoryview} 
+1. Tipos Numéricos: {int, float, complex}
+2. Tipos Sequenciais: {list, tuple, range, str}
+3. Tipo Dicionário: dict
+4. Tipo Conjunto: {set, frozenset}
+5. Tipo Booleano: bool
+6. Tipos Binários: {bytes, bytearray, memoryview}
 """
+string = [1,2,3]
 
-#os tipos de dados ditam quais operações podem ser performadas com uma variavel
-#em python os tipos de dados são classes e as variaveis são instâncias da classe
+# Os tipos de dados determinam quais operações podem ser realizadas com uma variável.
+# Em Python, os tipos de dados são classes e as variáveis são instâncias dessas classes.
+# As classes que representam os tipos de dados possuem métodos para manipulação.
 
-#obs: podemos saber o tipo de dado de qualquer variavel utilizando o type()
+# Observação: Podemos saber o tipo de dado de qualquer variável utilizando a função type().
 
-"""1º tipo de dado numerico
-são dados que possuem valores numericos, podem ser valores:
-inteiros(int)
-flutuante(float)
-complexos: (complex)
+# 1. Tipos Numéricos
+# São dados que possuem valores numéricos, podendo ser:
+# Inteiros (int), Flutuantes (float) e Complexos (complex)
+
+inteiro = 2  # Números inteiros
+flutuante = 2.2  # Números de ponto flutuante
+complexo = 3 + 2j  # Números complexos
+
+print(f"Inteiro: {inteiro}, Tipo: {type(inteiro)}")
+print(f"Flutuante: {flutuante}, Tipo: {type(flutuante)}")
+print(f"Complexo: {complexo}, Tipo: {type(complexo)}")
+
+# 2. Tipos Sequenciais
+# Permitem armazenar dados de maneira ordenada.
+
+# Strings
+string1 = "meu nome"  # Uma sequência de caracteres Unicode
+string2 = """oi
+meu nome é
+juao
 """
+print(f"String: {string2.strip()}")  # Remover espaços em branco
+print(f"Primeiro caractere: {string2[0]}")  # Acessando o primeiro caractere
 
-int = 2 #contem numeros positivos ou negativos inteiros, sem frações
-float = 2.2 #numeros representados pela classe float, e consiste de um numero real de ponto flutuante
-complex = 3 + 2j #numero representado pela classe complex, (real) + (imaginario)j
+# Listas
+lista = [1, 2, 3, 4]  # Coleção de dados flexível
+print(f"Lista: {lista}, Primeiro elemento: {lista[0]}")  # Acessando o primeiro elemento
 
-"""2º tipos sequenciais
-um tipo de dados que permite armazenar dados do mesmo tipo ou de tipos diferentes de maneira ordenada, são:
-strings:
-list:
-tuple: 
-"""
-#string
-string1 = "meu nome" #em python uma string é uma sequecia de characteres unicode
-string2 = """oi 
-             meu nome é
-             juao
-        """
-#podemos acessar caracteres específicos utilizando identação
-print(string2[0])# acessando o primeiro caractere
+# Tuplas
+tupla1 = tuple("ola")  # Criando uma tupla a partir de uma string
+print(f"Tupla: {tupla1}")
 
-#list: é uma coleção de dadoos, é bastante flexivel no sentido dos tipos de dados que uma unica lista pode conter
-lista = [1,2,3,4]
-#podemos acessar os elementos de uma lista usando identação
-print(lista[0])
+lista1 = [2] * 3  # Lista com repetição de elementos
+tupla2 = tuple(lista1)  # Criando uma tupla a partir de uma lista
+print(f"Tupla criada a partir da lista: {tupla2}, Primeiro elemento: {tupla2[0]}")
 
+# 4. Sets
+# Em Python, um set é uma coleção não ordenada de dados mutáveis que não se repetem.
 
-#tuplas
-#uma coleção de dados em sequecia que são imutaveis, uma tupla normalmente é criada colocando uma sequencia de valores entre parenteses separado por virgulas 
-# podemos usar a função tuple para criar uma tupla
+set1 = set([1, 2, 3, 4])  # Transformando uma lista em um set
+set2 = set("ola")  # Transformando uma string em um set
+print(f"Set a partir da lista: {set1}")
+print(f"Set a partir da string: {set2}")
 
-tupla1 = tuple("ola")
-print(tupla1)
-lista1 = [2]*3
-
-tupla2 = tuple(lista1)
-print(tupla2) #cria uma tupla apartir de uma listas
-print(tupla2[0]) #podemos acessar um elemento específico de uma tupla utilizando identação
-
-"""4ºset: em python é uma coleção não ordenada de dados mutaveis que não se repetem
-um set pode ser criado com a função set()
-elementos em um ser não precisam ser os mesmos
-"""
-set1 = set([1,2,3,4]) #transformando uma lista em um set
-set2 = set("ola")# transformando uma string em um ser
-print(set2)
-print(set1) 
-#não podemos acessar os elementos de um set utilizando indices
-#existe varias funções nativas da linguagem python para manipular sets
-
-
+# Não podemos acessar elementos de um set utilizando índices
+# Exemplo de manipulação de sets
+set1.add(5)  # Adicionando um elemento
+print(f"Set após adicionar 5: {set1}")

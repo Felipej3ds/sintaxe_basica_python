@@ -83,10 +83,13 @@ else: #o else no for só é executado quando o loop não é interrompido com o b
 
 #while
 """
-- while loop: repete um bloco de comandos até que uma condição sejá falça
+Repetições
+while (enquanto)
+Executa uma ação enquanto uma condição for verdadeira
+Loop infinito -> Quando um código não tem fim
 - declarações de controle: 
     continue: retorna o loop para o ínicio
-    Break: sai do loop
+    break: sai do loop
     pass: utilizado para escrever loops vazios
 
 - sentinel controlled Statement: aqui o usuario decide quantas vezes eçle qque que o loop seja execultado utilizando a sentinel value
