@@ -6,11 +6,11 @@
 5.  python range
 6. *args() e *kwargs()
 7. closure
-Self as Default Argument
-Secorators in python
-função map
-gunção Reduce
-função lambda
+8. argumento nomeado e não nomeado
+9. função map
+10. função filter
+11. função Reduce
+12. função lambda
 """
 
 #1. Função
@@ -93,13 +93,58 @@ kwargs(primeiro = 1, segundo = 2, terceiro = 3, quarto = 4)
 
 #7. closures
 """
-nested functions
-"""
 
+O fechamento do Python é uma função aninhada que nos permite acessar variáveis ​​da função externa mesmo depois que a função externa é fechada.
+nested functions: uma função dentro de outra função
+"""
 def funcao_Externa():
-    variavel = 'a variavel da função externa pode ser acessada pela função interna'
+    variavel = 'a variavel da função externa pode ser acessada mesmo após o fechamento da função'
     def funcao_interna():
         print(variavel)
-    funcao_interna()
+    return funcao_interna
+   
 
-funcao_Externa()
+oi = funcao_Externa()
+
+oi()
+
+
+#10. função map()
+"""
+syntax: map(fun, iter)
+fun:é a funçaõ que o map passa cada elemento do iteravel dado
+o retorno da função map pode ser passado para a função list para criar uma lista e set() para criar um set
+"""
+def adicao(n):
+    return n + n
+
+numbers = (1, 2, 3, 4)
+result = map(adicao, numbers)
+print(list(result))
+
+
+#11. função filter()
+"""
+filtra uma dada sequencia com a ajuda de um metodo que testa cada elemento com a ajudad e uma função que testa cada elemento da sequencia
+
+Syntax: filter(function, sequence)
+
+
+"""
+def fun(variaveis):
+    letters = ['a', 'e', 'i', 'o', 'u']
+    if (variaveis in letters):
+        return True
+    else:
+        return False
+
+
+# sequence
+sequencia = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r']
+
+# using filter function
+filtrado = filter(fun, sequencia)
+
+print('Tas letras fultradas foram')
+for s in filtrado:
+    print(s)
